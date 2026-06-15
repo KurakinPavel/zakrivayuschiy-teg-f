@@ -1,1 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+	--font-family-main: 'Inter-Variable', Arial;
+	--font-family-accent: ''PressStart2P'', Arial;
+	--font-weight-card-text: 410;
+	--font-weight-card-header: 715;
+	--background-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+												 repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+												 linear-gradient(to bottom, #e7e7e7 0%, #1a1a1a 100%);
+	
+	--main-widht: clamp(375px, 50%, 700px);
+	--main-header-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+
+	
+}
