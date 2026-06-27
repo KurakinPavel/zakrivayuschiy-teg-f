@@ -115,7 +115,7 @@
   border: none;
   background: none;
   padding: 0;
-  transition: box-shadow 300ms ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .card__icon-button:hover {
@@ -171,6 +171,10 @@
   display: none;
 }
 
+.dialog__button-open {
+  cursor: pointer;
+}
+
 .dialog[open] {
   display: flex;
   flex-direction: column;
@@ -211,6 +215,7 @@
 }
 
 .dialog__button-close {
+  cursor: pointer;
   display: block;
   align-items: center;
   margin-block-start: 30px;
@@ -222,6 +227,45 @@
 
 .dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
+}
+
+.button {
+  position: relative;
+  z-index: 1;
+  border: 2px solid var(--block-border-color);
+  background: var(--block-background-color);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0 0;
+  z-index: -1;
+  background-color: var(--block-background-hover-color);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.button:hover {
+  z-index: 1;
+  cursor: pointer;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px var(--block-background-hover-color);
 }
 
 @supports (font-variation-settings: normal) {

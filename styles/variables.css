@@ -16,6 +16,7 @@
 	--main-font-varitaion-settings: 'wght' 410, 'wdth' 60, 'slnt' 0, 'opsz' 0;
 	--block-background-color: white;
 	--block-border-color: black;
+	--block-background-hover-color: black;
 	--card-label-top: 25px;
 	--card-label-right: 25px;
 	--text-outline-color: white;
