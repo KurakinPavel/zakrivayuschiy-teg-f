@@ -1,15 +1,45 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
 	--font-family-main: 'Inter-Variable', Arial;
-	--font-family-accent: ''PressStart2P'', Arial;
-	--font-weight-card-text: 410;
-	--font-weight-card-header: 715;
+	--font-family-accent: PressStart2P, Arial;
 	--background-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
 												 repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
 												 linear-gradient(to bottom, #e7e7e7 0%, #1a1a1a 100%);
-	
-	--main-widht: clamp(375px, 50%, 700px);
-	--main-header-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+	--block-widht: clamp(375px, 50%, 700px);
+	--header-padding: 130px 0;
+	--font-weight-accented-text: 400;
+	--font-weight-card-title: 715;
+	--font-weight-card-text: 410;
+	--card-font-size: 18px;
+	--main-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+	--main-subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+	--main-font-varitaion-settings: 'wght' 410, 'wdth' 60, 'slnt' 0, 'opsz' 0;
+	--block-background-color: white;
+	--block-border-color: black;
+	--card-label-top: 25px;
+	--card-label-right: 25px;
+	--text-outline-color: white;
+	--dialog-open-paddings: 15px 18px;
+	--dialog-button-size: 335px;
+	--dialog-paddings: 28px;
+	--dialog-open-size: 353px;
+	--floppy-icon-width: 21px;
+	--floppy-icon-height: 21px;
+	--floppy-icon-dialog-width: 39px;
+	--floppy-icon-dialog-height: 39px;
+	--dialog-close-text-width: 234px;
+}
 
-
+@media (width <= 375px) {
+	:root {
+		--block-widht: 100%;
+		--header-paddings: 120px 0;
+		--floppy-icon-width: 28px;
+		--floppy-icon-height: 28px;
+		--dialog-open-paddings: 14px 10px;
+		--dialog-button-size: 306px;
+		--dialog-open-size: 341px;
+		--dialog-paddings: 28px 38px;
+		--dialog-close-text-width: 202px;
+	}
 }
