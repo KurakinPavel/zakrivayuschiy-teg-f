@@ -1,14 +1,3 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -175,6 +164,14 @@
   cursor: pointer;
 }
 
+.dialog__button:focus {
+  outline: none;
+}
+
+.dialog__button:focus-visible {
+  box-shadow: 2px 2px var(--block-background-hover-color);
+}
+
 .dialog[open] {
   display: flex;
   flex-direction: column;
@@ -266,6 +263,38 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px var(--block-background-hover-color);
+}
+
+.filter__brightness {
+  filter: brightness(70%);
+}
+
+.filter__saturate {
+  filter: saturate(70%);
+}
+
+.filter__invert {
+  filter: invert(0.8);
+}
+
+.filter__sepia {
+  filter: sepia(0.5);
+}
+
+.filter__contrast {
+  filter: contrast(150%);
+}
+
+.filter__blur {
+  filter: blur(0.02rem);
+}
+
+.filter__multiple {
+  filter: saturate(120%) hue-rotate(10deg) contrast(110%);
+}
+
+.filter__hue-rotate {
+  filter: hue-rotate(7deg);
 }
 
 @supports (font-variation-settings: normal) {

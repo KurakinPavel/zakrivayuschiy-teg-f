@@ -1,4 +1,3 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
 	--font-family-main: 'Inter-Variable', Arial;
 	--font-family-accent: PressStart2P, Arial;
@@ -29,6 +28,8 @@
 	--floppy-icon-dialog-width: 39px;
 	--floppy-icon-dialog-height: 39px;
 	--dialog-close-text-width: 234px;
+	--heart-static-color: black;
+	--heart-dynamic-color: red;
 }
 
 @media (width <= 375px) {
