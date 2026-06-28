@@ -136,7 +136,7 @@
   mix-blend-mode: difference;
 }
 
-.dialog__button-open {
+.dialog-button-open {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -160,15 +160,15 @@
   display: none;
 }
 
-.dialog__button-open {
+.dialog-button-open {
   cursor: pointer;
 }
 
-.dialog__button:focus {
+.dialog-button:focus {
   outline: none;
 }
 
-.dialog__button:focus-visible {
+.dialog-button:focus-visible {
   box-shadow: 2px 2px var(--block-background-hover-color);
 }
 
@@ -265,35 +265,35 @@
   box-shadow: 2px 2px var(--block-background-hover-color);
 }
 
-.filter__brightness {
+.filter-brightness {
   filter: brightness(70%);
 }
 
-.filter__saturate {
+.filter-saturate {
   filter: saturate(70%);
 }
 
-.filter__invert {
+.filter-invert {
   filter: invert(0.8);
 }
 
-.filter__sepia {
+.filter-sepia {
   filter: sepia(0.5);
 }
 
-.filter__contrast {
+.filter-contrast {
   filter: contrast(150%);
 }
 
-.filter__blur {
+.filter-blur {
   filter: blur(0.02rem);
 }
 
-.filter__multiple {
+.filter-multiple {
   filter: saturate(120%) hue-rotate(10deg) contrast(110%);
 }
 
-.filter__hue-rotate {
+.filter-hue-rotate {
   filter: hue-rotate(7deg);
 }
 
