@@ -79,6 +79,6 @@
 		fill: transparent;
 	}
 	to {
-		fill: #FF0000;
+		fill: var(--heart-dynamic-color);
 	}
 }
