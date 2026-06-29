@@ -2,7 +2,7 @@
   z-index: -100;
   justify-items: center;
   font-family: var(--font-family-main), sans-serif;
-  font-weight: var(--font-weight-card-text);
+  font-variation-settings: "wght" var(--font-weight-card-text);
   font-size: var(--card-font-size);
   background-image: var(--background-gradient);
   background-position: center;
@@ -18,7 +18,7 @@
   margin-top: 99px;
   border: 2px solid var(--block-border-color);
   padding: var(--header-padding);
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-weight: var(--font-weight-accented-text);
   text-transform: uppercase;
   background-color: var(--block-background-color);
@@ -61,7 +61,7 @@
   right: var(--card-label-right);
   z-index: 1;
   opacity: 50%;
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-weight: var(--font-weight-accented-text);
   font-size: 14px;
   text-shadow:
@@ -76,6 +76,7 @@
   border-top: 2px solid var(--block-border-color);
   border-bottom: 2px solid var(--block-border-color);
   object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   aspect-ratio: 1 / 1;
 }
@@ -85,7 +86,7 @@
   flex-direction: column;
   gap: 25px;
   padding: 24px 25px 0;
-  line-height: 21px;
+  line-height: 116.7%;
 }
 
 .card__control-elements {
@@ -130,7 +131,7 @@
   position: relative;
   z-index: 1;
   color: var(--block-background-color);
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-weight: var(--font-weight-accented-text);
   font-size: 14px;
   mix-blend-mode: difference;
@@ -145,7 +146,6 @@
   gap: 8px;
   margin-top: 50px;
   margin-bottom: 100px;
-  border: 2px solid var(--block-border-color);
   padding: var(--dialog-open-paddings);
   line-height: 90%;
   cursor: pointer;
@@ -174,7 +174,7 @@
   margin: 0 0;
   border: 2px solid var(--block-border-color);
   padding: var(--dialog-paddings);
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-weight: var(--font-weight-accented-text);
   font-size: 14px;
   text-transform: uppercase;
@@ -196,7 +196,6 @@
 
 .dialog__text {
   width: var(--dialog-close-text-width);
-  height: 63px;
 }
 
 .dialog__form-container {
@@ -207,7 +206,6 @@
   display: block;
   align-items: center;
   margin-block-start: 30px;
-  border: 2px solid var(--block-border-color);
   padding: 10px 0;
   background: transparent;
   cursor: pointer;
