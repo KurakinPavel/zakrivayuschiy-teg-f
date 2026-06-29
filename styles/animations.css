@@ -1,44 +1,36 @@
-.card__icon-button .like-icon .main-body {
-	fill: transparent;
-	transition: fill 0.3s 0.05s;
-}
-
-.card__icon-button:hover .like-icon .main-body {
+.like-icon .contour {
 	fill: var(--heart-static-color);
-	transition: fill 0.3s;
-}
-
-.card__icon-button:active .like-icon .main-body {
-	fill: var(--heart-dynamic-color);
-	transition: fill 0.3s;
-}
-
-.card__icon-button:hover .like-icon.is-liked .main-body {
-	fill: var(--heart-dynamic-color);
-}
-
-.like-icon.is-liked .main-body {
-	fill: var(--heart-dynamic-color);
-	transition: fill 0.3s 0.03s;
+	transition: fill 0.1s linear;
 }
 
 .card__icon-button .like-icon .core {
 	fill: transparent;
-	transition: fill 0.3s;
+	transition: fill 0.3s linear 0.03s;
+}
+
+.card__icon-button .like-icon .main-body {
+	fill: transparent;
+	transition: fill 0.3s linear;
 }
 
 .card__icon-button:hover .like-icon .core {
 	fill: var(--heart-static-color);
-	transition: fill 0.3s 0.03s;
+	transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .like-icon .main-body {
+	fill: var(--heart-static-color);
+	transition: fill 0.3s linear 0.05s;
 }
 
 .card__icon-button:active .like-icon .core {
 	fill: var(--heart-dynamic-color);
-	transition: fill 0.3s 0.03s;
+	transition: fill 0.3s linear;
 }
 
-.card__icon-button:hover .like-icon.is-liked .core {
+.card__icon-button:active .like-icon .main-body {
 	fill: var(--heart-dynamic-color);
+	transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
@@ -46,23 +38,23 @@
 	transition: fill 0.3s;
 }
 
-.like-icon.is-liked .contour {
+.like-icon.is-liked .main-body {
 	fill: var(--heart-dynamic-color);
-	transition: fill 0.3s 0.06s;
+	transition: fill 0.3s linear 0.05s;
 }
 
-.like-icon.is-liked .heart {
-	transform-origin: center;
-	animation: like-activate 0.3s ease-in 0.1s;
+.like-icon.is-liked .contour {
+	fill: var(--heart-dynamic-color);
+	transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .sparks {
 	animation: sparks 0.3s ease-in 0.3s;
 }
 
-.like-icon .contour {
-	fill: var(--heart-static-color);
-	transition: fill 0.1s linear;
+.like-icon.is-liked .header {
+	transform-origin: center;
+	animation: like-activate 0.3s ease-in 0.1s;
 }
 
 @keyframes like-activate {
