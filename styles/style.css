@@ -15,7 +15,7 @@
 .header {
   justify-items: center;
   align-content: center;
-  margin-top: 99px;
+  margin-top: var(--header-margin-top);
   border: 2px solid var(--block-border-color);
   padding: var(--header-padding);
   font-family: var(--font-family-accent), fantasy;
@@ -35,7 +35,7 @@
 }
 
 .content {
-  margin-top: 95px;
+  margin-top: var(--content-margin-top);
   inline-size: var(--block-widht);
 }
 

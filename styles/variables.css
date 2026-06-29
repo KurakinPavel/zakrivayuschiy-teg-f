@@ -6,6 +6,8 @@
 												 linear-gradient(to bottom, #e7e7e7 0%, #1a1a1a 100%);
 	--block-widht: clamp(375px, 50%, 700px);
 	--header-padding: 130px 0;
+	--header-margin-top: 98px;
+	--content-margin-top: 97px;
 	--font-weight-accented-text: 400;
 	--font-weight-card-title: 715;
 	--font-weight-card-text: 410;
@@ -36,7 +38,9 @@
 @media (width <= 375px) {
 	:root {
 		--block-widht: 100%;
-		--header-paddings: 120px 0;
+		--header-padding: 120px 0;
+		--header-margin-top: 100px;
+		--content-margin-top: 100px;
 		--floppy-icon-width: 28px;
 		--floppy-icon-height: 28px;
 		--dialog-open-paddings: 14px 10px;
