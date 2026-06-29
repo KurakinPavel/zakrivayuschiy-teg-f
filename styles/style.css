@@ -2,12 +2,12 @@
   z-index: -100;
   justify-items: center;
   font-family: var(--font-family-main), sans-serif;
-  font-variation-settings: "wght" var(--font-weight-card-text);
   font-size: var(--card-font-size);
   background-image: var(--background-gradient);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  font-variation-settings: "wght" var(--font-weight-card-text);
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
@@ -153,9 +153,9 @@
 }
 
 .floppy-icon {
+  flex: none;
   width: var(--floppy-icon-width);
   height: var(--floppy-icon-height);
-  flex: none;
   fill: var(--floppy-icon-alternative-color);
   mix-blend-mode: difference;
 }
