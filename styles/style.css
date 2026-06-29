@@ -155,18 +155,13 @@
 .floppy-icon {
   width: var(--floppy-icon-width);
   height: var(--floppy-icon-height);
+  flex: none;
+  fill: var(--floppy-icon-alternative-color);
+  mix-blend-mode: difference;
 }
 
 .dialog {
   display: none;
-}
-
-.dialog-button:focus {
-  outline: none;
-}
-
-.dialog-button:focus-visible {
-  box-shadow: 2px 2px var(--block-background-hover-color);
 }
 
 .dialog[open] {
@@ -217,6 +212,10 @@
   background: transparent;
   cursor: pointer;
   inline-size: 100%;
+}
+
+.dialog__button-close_text {
+  text-transform: uppercase;
 }
 
 .dialog::backdrop {
